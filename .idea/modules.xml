@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/adp-nested-scrolling.iml" filepath="$PROJECT_DIR$/adp-nested-scrolling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adp-nested-scrolling.iml" filepath="$PROJECT_DIR$/.idea/modules/adp-nested-scrolling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/adp-nested-scrolling.app.unitTest.iml" />
     </modules>
   </component>
 </project>

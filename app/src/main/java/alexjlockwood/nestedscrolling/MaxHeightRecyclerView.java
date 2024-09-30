@@ -1,9 +1,10 @@
 package alexjlockwood.nestedscrolling;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A {@link RecyclerView} with an optional maximum height.

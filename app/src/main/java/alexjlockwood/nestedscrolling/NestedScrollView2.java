@@ -1,14 +1,15 @@
 package alexjlockwood.nestedscrolling;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.view.NestedScrollingParent2;
-import android.support.v4.view.NestedScrollingParentHelper;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.view.NestedScrollingParent2;
+import androidx.core.view.NestedScrollingParentHelper;
+import androidx.core.view.ViewCompat;
+import androidx.core.widget.NestedScrollView;
 
 /**
  * A {@link NestedScrollView} that implements the {@link NestedScrollingParent2} interface.
@@ -25,7 +26,7 @@ public class NestedScrollView2 extends NestedScrollView implements NestedScrolli
 
   @Override
   public boolean onStartNestedScroll(
-      @NonNull View child, @NonNull View target, int axes, int type) {
+          @NonNull View child, @NonNull View target, int axes, int type) {
     return (axes & ViewCompat.SCROLL_AXIS_VERTICAL) != 0;
   }
 
@@ -38,7 +39,7 @@ public class NestedScrollView2 extends NestedScrollView implements NestedScrolli
 
   @Override
   public void onNestedPreScroll(
-      @NonNull View target, int dx, int dy, @Nullable int[] consumed, int type) {
+          @NonNull View target, int dx, int dy, @Nullable int[] consumed, int type) {
     dispatchNestedPreScroll(dx, dy, consumed, null, type);
   }
 

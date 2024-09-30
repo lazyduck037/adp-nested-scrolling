@@ -3,18 +3,16 @@ package alexjlockwood.nestedscrolling;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v4.widget.NestedScrollView.OnScrollChangeListener;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.OnScrollListener;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
-import android.support.v7.widget.DividerItemDecoration;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -50,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     rv.addItemDecoration(new DividerItemDecoration(this, lm.getOrientation()));
 
     final View cardHeaderShadow = findViewById(R.id.card_header_shadow);
-    rv.addOnScrollListener(new OnScrollListener() {
+    rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
       @Override
       public void onScrolled(RecyclerView rv, int dx, int dy) {
         // Animate the shadow view in/out as the user scrolls so that it
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
     final NestedScrollView nsv = findViewById(R.id.nestedscrollview);
     nsv.setOverScrollMode(View.OVER_SCROLL_NEVER);
-    nsv.setOnScrollChangeListener(new OnScrollChangeListener() {
+    nsv.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
       @Override
       public void onScrollChange(
           NestedScrollView nsv, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
